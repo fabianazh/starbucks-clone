@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Font1';
+    src: local('Font1'),
+        url('../src/assets/fonts/SoDoSans-SemiBold.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'Font2';
+    src: local('Font2'),
+        url('../src/assets/fonts/SoDoSans-Regular.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'Font3';
+    src: local('Font3'),
+        url('../src/assets/fonts/SoDoSans-Light.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'Font4';
+    src: local('Font4'),
+        url('../src/assets/fonts/SoDoSans-Bold.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'Font5';
+    src: local('Font5'),
+        url('../src/assets/fonts/SoDoSans-Black.ttf') format('woff');
+}
+
+@layer base {
+    * {
+        @apply box-border m-0 p-0;
+    }
+    body {
+        @apply overflow-x-hidden;
+        font-family: 'Font1';
+    }
+    br {
+        @apply hidden xl:inline-block;
+    }
+    .Font1 {
+        font-family: 'Font1' !important;
+    }
+    .Font2 {
+        font-family: 'Font2' !important;
+    }
+    .Font3 {
+        font-family: 'Font3' !important;
+    }
+    .Font4 {
+        font-family: 'Font4' !important;
+    }
+    .Font5 {
+        font-family: 'Font5' !important;
+    }
+}
+
+@layer components {
+    /* Header */
+    .header {
+        @apply bg-white h-20 xl:h-24 grid grid-cols-2 items-center justify-between w-screen border-b-[3px] border-b-[rgb(252,222,222)] border-solid px-6 xl:px-11;
+    }
+    .logo img {
+        @apply h-[10mm] xl:h-[13mm] aspect-square;
+    }
+    .navbar {
+        @apply w-auto hidden xl:flex;
+    }
+    .navbar ul {
+        @apply flex justify-between items-center gap-x-7;
+    }
+    .navbar li {
+        @apply flex p-0;
+    }
+    .navbar li a {
+        @apply text-[black] text-[15px] tracking-widest font-black transition-colors duration-300 hover:text-Green;
+        font-family: 'Font2';
+    }
+    .store {
+        @apply flex gap-2 items-center;
+    }
+    .store__text {
+        @apply text-sm cursor-pointer hover:text-Green font-black;
+    }
+    .button {
+        @apply transition-all duration-500 text-sm border cursor-pointer pb-[7px] px-[15px] py-1.5 rounded-[35px] flex max-w-fit;
+        font-family: 'Font1';
+    }
+    /* Header */
+
+    /* Nav Menu */
+    .nav__menu__container {
+        @apply flex flex-col gap-7 w-auto xl:px-0 px-3;
+    }
+    .nav__menu__heading {
+        @apply xl:text-xl text-black xl:tracking-normal tracking-tighter text-base;
+    }
+    .nav__menu__ul {
+        @apply hidden xl:flex flex-col gap-6;
+    }
+    .nav__menu__ul li {
+        @apply transition-all duration-200 hover:text-black cursor-pointer;
+    }
+    /* Nav Menu */
+
+    /* Footer */
+    .footer__list {
+        @apply flex items-center text-base pr-4 cursor-pointer hover:underline;
+    }
+    /* Footer */
+}
+
+@layer utilities {
+    .grid__center {
+        @apply grid place-items-center;
+    }
+}
