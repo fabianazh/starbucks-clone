@@ -19,7 +19,7 @@ export const Content3 = () => {
                         <span className='block text-3xl xl:text-5xl leading-tight Font1 xl:tracking-wider mb-4 xl:mb-8'>
                             The art of the <br /> Roast
                         </span>
-                        <span className='tracking-wide font-normal xl:font-bold text-lg xl:text-2xl xl:leading-10 mb-6 xl:mb-9'>
+                        <span className='tracking-normal font-normal xl:font-bold text-lg xl:text-2xl xl:leading-10 mb-6 xl:mb-9'>
                             With a new roast spectrum front and <br /> center on
                             our coffee bags, it’s easier than <br /> ever to
                             find a taste you love.

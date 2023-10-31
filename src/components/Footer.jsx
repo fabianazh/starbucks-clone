@@ -9,7 +9,7 @@ export const Footer = () => {
     ]
 
     return (
-        <footer className='w-11/12 xl:w-[94%] mx-auto border-t-2 h-auto py-10 mt-10'>
+        <footer className='w-[89%] xl:w-[94%] px-1 xl:px-0 mx-auto border-t-2 h-auto py-10 mt-10'>
             <div className='flex gap-4 mb-8'>
                 {icons.map((icon) => (
                     <img

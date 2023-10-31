@@ -36,9 +36,15 @@
     * {
         @apply box-border m-0 p-0;
     }
+    html {
+        @apply scroll-smooth;
+    }
     body {
         @apply overflow-x-hidden;
         font-family: 'Font1';
+    }
+    li {
+        @apply list-none;
     }
     br {
         @apply hidden xl:inline-block;
@@ -63,7 +69,7 @@
 @layer components {
     /* Header */
     .header {
-        @apply bg-white h-20 xl:h-24 grid grid-cols-2 items-center justify-between w-screen border-b-[3px] border-b-[rgb(252,222,222)] border-solid px-6 xl:px-11;
+        @apply bg-white h-20 xl:h-24 grid grid-cols-2 items-center justify-between w-screen border-b-[3px] border-b-[rgb(252,222,222)] border-solid px-6 z-50 xl:px-11;
     }
     .logo img {
         @apply h-[10mm] xl:h-[13mm] aspect-square;
@@ -98,19 +104,19 @@
         @apply flex flex-col gap-7 w-auto xl:px-0 px-3;
     }
     .nav__menu__heading {
-        @apply xl:text-xl text-black xl:tracking-normal tracking-tighter text-base;
+        @apply text-base text-black xl:tracking-normal tracking-tighter;
     }
     .nav__menu__ul {
-        @apply hidden xl:flex flex-col gap-6;
+        @apply flex flex-col gap-6;
     }
     .nav__menu__ul li {
-        @apply transition-all duration-200 hover:text-black cursor-pointer;
+        @apply text-sm xl:text-base transition-all duration-200 hover:text-black cursor-pointer;
     }
     /* Nav Menu */
 
     /* Footer */
     .footer__list {
-        @apply flex items-center text-base pr-4 cursor-pointer hover:underline;
+        @apply flex items-center text-sm xl:text-base pr-4 cursor-pointer hover:underline;
     }
     /* Footer */
 }
@@ -118,5 +124,14 @@
 @layer utilities {
     .grid__center {
         @apply grid place-items-center;
+    }
+    .nav__burger__overlay {
+        @apply -translate-x-0 w-screen xl:hidden transition-all absolute xl:-z-50 duration-500 left-0 Font2 top-[79px] h-screen bg-black/60 z-50;
+    }
+    .nav__burger__menu {
+        @apply w-9/12 divide-y transition-all duration-500 divide-stone-400 right-0 absolute z-50 top-[79px] text-xl bg-white h-screen py-12 px-8 flex flex-col;
+    }
+    .nav__burger__value {
+        @apply opacity-100 -translate-x-0;
     }
 }
