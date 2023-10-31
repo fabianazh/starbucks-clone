@@ -4,27 +4,17 @@
 
 @font-face {
     font-family: 'Font1';
-    src: local('Font1'), url('./fonts/SoDoSans-SemiBold.ttf') format('woff');
+    src: local('Font1'), url('/fonts/SoDoSans-SemiBold.ttf') format('woff');
 }
 
 @font-face {
     font-family: 'Font2';
-    src: local('Font2'), url('./fonts/SoDoSans-Regular.ttf') format('woff');
+    src: local('Font2'), url('/fonts/SoDoSans-Regular.ttf') format('woff');
 }
 
 @font-face {
     font-family: 'Font3';
-    src: local('Font3'), url('./fonts/SoDoSans-Light.ttf') format('woff');
-}
-
-@font-face {
-    font-family: 'Font4';
-    src: local('Font4'), url('./fonts/SoDoSans-Bold.ttf') format('woff');
-}
-
-@font-face {
-    font-family: 'Font5';
-    src: local('Font5'), url('./fonts/SoDoSans-Black.ttf') format('woff');
+    src: local('Font3'), url('/fonts/SoDoSans-Light.ttf') format('woff');
 }
 
 @layer base {
