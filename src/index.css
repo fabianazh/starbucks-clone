@@ -32,7 +32,7 @@
         @apply box-border m-0 p-0;
     }
     html {
-        @apply scroll-smooth;
+        @apply scroll-smooth overflow-x-hidden;
     }
     body {
         @apply overflow-x-hidden;
