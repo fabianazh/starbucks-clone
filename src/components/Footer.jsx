@@ -14,7 +14,7 @@ export const Footer = () => {
                 {icons.map((icon) => (
                     <img
                         key={icon}
-                        src={`/icons/${icon}.png`}
+                        src={`./icons/${icon}.png`}
                         alt=''
                         className='w-8 opacity-90 cursor-pointer'
                     />
