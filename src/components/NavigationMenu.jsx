@@ -114,7 +114,7 @@ export const NavigationMenu = () => {
                 className='w-[94%] mx-auto flex xl:hidden flex-col xl:flex-row pt-6 xl:pb-4 Font2 text-stone-500 gap-x-14 gap-y-8 text-sm px-3 xl:px-0 xl:text-xl'
             >
                 {Object.entries(menuStates).map(([menu, isOpen]) => (
-                    <VStack key={menu} spacing={'7'} alignItems='flex-start'>
+                    <VStack key={menu} spacing={'6'} alignItems='flex-start'>
                         <Box
                             display='flex'
                             justifyContent='space-between'

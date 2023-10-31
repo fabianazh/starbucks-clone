@@ -77,7 +77,6 @@ export const Header = () => {
                 className={`nav__burger__overlay opacity-0 ${isNavOpen}`}
             ></div>
             <div
-                onClick={() => openNav('translate-x-full')}
                 className={`translate-x-full Font2 nav__burger__menu ${isNavOpen} opacity-100`}
             >
                 <ul className='flex flex-col gap-9 pb-9'>
