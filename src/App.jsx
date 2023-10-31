@@ -18,7 +18,7 @@ function App() {
             <Content4></Content4>
             <Content5></Content5>
             <Content6></Content6>
-            <div className='w-screen grid__center border-b-[3px] h-24 px-10 text-center'>
+            <div className='w-screen grid__center Font2 border-b-[3px] h-24 px-10 text-center'>
                 <span className='block text-sm'>
                     *See the DoorDash app for availability and restrictions.
                     Menu limited.

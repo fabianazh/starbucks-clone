@@ -4,32 +4,27 @@
 
 @font-face {
     font-family: 'Font1';
-    src: local('Font1'),
-        url('../src/assets/fonts/SoDoSans-SemiBold.ttf') format('woff');
+    src: local('Font1'), url('./fonts/SoDoSans-SemiBold.ttf') format('woff');
 }
 
 @font-face {
     font-family: 'Font2';
-    src: local('Font2'),
-        url('../src/assets/fonts/SoDoSans-Regular.ttf') format('woff');
+    src: local('Font2'), url('./fonts/SoDoSans-Regular.ttf') format('woff');
 }
 
 @font-face {
     font-family: 'Font3';
-    src: local('Font3'),
-        url('../src/assets/fonts/SoDoSans-Light.ttf') format('woff');
+    src: local('Font3'), url('./fonts/SoDoSans-Light.ttf') format('woff');
 }
 
 @font-face {
     font-family: 'Font4';
-    src: local('Font4'),
-        url('../src/assets/fonts/SoDoSans-Bold.ttf') format('woff');
+    src: local('Font4'), url('./fonts/SoDoSans-Bold.ttf') format('woff');
 }
 
 @font-face {
     font-family: 'Font5';
-    src: local('Font5'),
-        url('../src/assets/fonts/SoDoSans-Black.ttf') format('woff');
+    src: local('Font5'), url('./fonts/SoDoSans-Black.ttf') format('woff');
 }
 
 @layer base {
@@ -126,10 +121,10 @@
         @apply grid place-items-center;
     }
     .nav__burger__overlay {
-        @apply -translate-x-0 w-screen xl:hidden transition-all absolute xl:-z-50 duration-500 left-0 Font2 top-[79px] h-screen bg-black/60 z-50;
+        @apply -translate-x-0 w-screen xl:hidden transition-all absolute xl:-z-50 duration-500 left-0 top-[78px] h-screen bg-black/60 z-50;
     }
     .nav__burger__menu {
-        @apply w-9/12 divide-y transition-all duration-500 divide-stone-400 right-0 absolute z-50 top-[79px] text-xl bg-white h-screen py-12 px-8 flex flex-col;
+        @apply w-9/12 divide-y transition-all duration-500 divide-stone-400 right-0 absolute z-50 top-[78px] text-xl bg-white h-screen py-12 px-8 flex flex-col;
     }
     .nav__burger__value {
         @apply opacity-100 -translate-x-0;

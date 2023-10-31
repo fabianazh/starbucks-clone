@@ -20,7 +20,7 @@ export const NavigationMenu = () => {
 
     return (
         <>
-            <section className='w-[94%] mx-auto hidden xl:flex flex-col xl:flex-row text-base pt-6 xl:pb-4 Font2 text-stone-500 gap-x-14 gap-y-10'>
+            <section className='w-[94%] mx-auto hidden xl:flex flex-col xl:flex-row text-base pt-6 xl:pb-4 Font2 text-stone-500 gap-x-14 gap-y-6'>
                 <div className='nav__menu__container'>
                     <div className='flex justify-between'>
                         <span className='nav__menu__heading Font2'>
@@ -111,10 +111,10 @@ export const NavigationMenu = () => {
             </section>
             <Box
                 as='section'
-                className='w-[94%] mx-auto flex xl:hidden flex-col xl:flex-row pt-6 xl:pb-4 Font2 text-stone-500 gap-x-14 gap-y-10 text-sm px-3 xl:px-0 xl:text-xl'
+                className='w-[94%] mx-auto flex xl:hidden flex-col xl:flex-row pt-6 xl:pb-4 Font2 text-stone-500 gap-x-14 gap-y-8 text-sm px-3 xl:px-0 xl:text-xl'
             >
                 {Object.entries(menuStates).map(([menu, isOpen]) => (
-                    <VStack key={menu} spacing={'24'} alignItems='flex-start'>
+                    <VStack key={menu} spacing={'7'} alignItems='flex-start'>
                         <Box
                             display='flex'
                             justifyContent='space-between'
@@ -150,7 +150,7 @@ export const NavigationMenu = () => {
                                     <Text
                                         display={'flex'}
                                         flexDir={'column'}
-                                        gap={'20'}
+                                        gap={'6'}
                                     >
                                         <li>Our Company</li>
                                         <li>Our Coffee</li>
@@ -165,7 +165,7 @@ export const NavigationMenu = () => {
                                     <Text
                                         display={'flex'}
                                         flexDir={'column'}
-                                        gap={'20'}
+                                        gap={'6'}
                                     >
                                         <li>Culture and Values</li>
                                         <li>
@@ -184,7 +184,7 @@ export const NavigationMenu = () => {
                                     <Text
                                         display={'flex'}
                                         flexDir={'column'}
-                                        gap={'20'}
+                                        gap={'6'}
                                     >
                                         <li>People</li>
                                         <li>Planet</li>
@@ -198,7 +198,7 @@ export const NavigationMenu = () => {
                                     <Text
                                         display={'flex'}
                                         flexDir={'column'}
-                                        gap={'20'}
+                                        gap={'6'}
                                     >
                                         <li>Landlord Support Center</li>
                                         <li>Suppliers</li>
@@ -212,7 +212,7 @@ export const NavigationMenu = () => {
                                     <Text
                                         display={'flex'}
                                         flexDir={'column'}
-                                        gap={'20'}
+                                        gap={'6'}
                                     >
                                         <li>Order on the App</li>
                                         <li>Order on the Web</li>

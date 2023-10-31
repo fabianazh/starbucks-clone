@@ -22,7 +22,7 @@ export const Header = () => {
 
     return (
         <>
-            <header className='header'>
+            <header className='header Font2'>
                 <div className='flex w-full gap-x-10'>
                     <a href='https://www.starbucks.com/' className='logo'>
                         <img src={StarbucksIcon} alt='Starbucks Logo' />
@@ -78,7 +78,7 @@ export const Header = () => {
             ></div>
             <div
                 onClick={() => openNav('translate-x-full')}
-                className={`translate-x-full nav__burger__menu ${isNavOpen} opacity-100`}
+                className={`translate-x-full Font2 nav__burger__menu ${isNavOpen} opacity-100`}
             >
                 <ul className='flex flex-col gap-9 pb-9'>
                     <li>Menu</li>
